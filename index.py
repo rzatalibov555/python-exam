@@ -178,10 +178,146 @@ thislist2 = ["Fuad", "Rza", "Sebuhi"]
 
 # ===========================================================
 
-l = [1, 2, 5, 2, 7, 3, 8, 9, 5]
+# l = [1, 2, 5, 2, 7, 3, 8, 9, 5]
 
-largest = min(l)
-l.remove(largest)
-largest2 = min(l)
-l.remove(largest2)
-print(largest+largest2)
+# largest = min(l)
+# l.remove(largest)
+# largest2 = min(l)
+# l.remove(largest2)
+# print(largest+largest2)
+
+# =================================================================
+
+
+# l = [1, 2, 5, 2, 7, 3, 8, 9, 5]
+
+# largest = max(l)
+# l.remove(largest)
+# largest2 = max(l)
+# l.remove(largest2)
+# print(largest+largest2)
+
+
+# ======================QUESTION 7===========================================
+
+# d1 = {'a': 100, 'b': 200, 'c':300}
+# d2 = {'a': 300, 'b': 200, 'd':400}
+# d3 = {}
+# for key1, value1 in d1.items():
+#     for key2, value2 in d2.items():
+#         if not key1 in d2.keys():
+#             d3[key1] = value1
+#             continue
+#         if key2 in d1.keys():
+#             if key1 == key2:
+#                 d3[key1] = value1 + value2
+#         else:
+#             d3[key2] = value2 
+# print(d3)
+
+
+# ======================QUESTION 8===========================================
+            # VERSION1
+            
+# a = ['PY01', 'PY02', 'PY03', 'PY04']
+# b = ['Baki', 'Sumqayit', 'Qubadlı', 'Lənkəran']
+# c = [90, 50, 39, 42]
+
+# d = list()
+
+# for index in range(len(a)):
+#     extra = dict()
+#     extra[a[index]]  = {b[index]: c[index]}
+#     d.append(extra)
+# print(d)
+
+            # VERSION2
+            
+# a = ['PY01', 'PY02', 'PY03', 'PY04']
+# b = ['Baki', 'Sumqayit', 'Qubadlı', 'Lənkəran']
+# c = [90, 50, 39, 42]
+
+# dict_1 = dict(zip(b,c))
+# dict_2 = dict().fromkeys(a,dict_1)
+# print(dict_2)
+
+# ======================QUESTION 11===========================================
+
+# list_ = [1,2,3,4,5]
+
+# for index, val in enumerate(list_):
+#     list_[index] = index **2
+# print(list_)
+
+# ======================QUESTION 13===========================================
+
+# myDict = {
+#     "name": "fuad",
+#     "point": 66
+# }
+# d = dict()
+# for key, val in myDict.items():
+#     d[val] = key
+# print(d)
+
+
+# ======================QUESTION 13===========================================
+
+# a = input("ilk sozu daxil et: ")
+# b = input("ikinci sozu daxil et: ")
+
+# a, b = b, a
+
+# print(a, b , sep="\n")
+
+# ======================QUESTION 16===========================================
+
+# a = int(input("a: "))
+# b = int(input("b: "))
+
+# count = 0
+
+# for i in range(a, b):
+#     for j in range(2, i):
+#         if i % j == 0:
+#             break
+#     else:
+#         count+=1
+# if a == 1:
+#     print(count-1)
+# else:
+#     print(count)
+
+
+# ======================QUESTION 17===========================================
+
+# word = input("deyer daxil et: ").lower()
+
+# print(word[0] + word[1:].replace(word[0],'$'))
+
+# ======================QUESTION 18===========================================
+
+# word = input("deyer daxil et: ")
+
+# print(word[-1] + word[1:-1] + word[0])
+
+
+# ======================QUESTION 19===========================================
+
+# search = input("Search: ").lower()
+# word   = input("Enter text: ").lower()
+
+# if search in word:
+#     print("var",word.count(search))
+# else:
+#     print("yoxdur")
+
+
+# ======================QUESTION 20===========================================
+
+# myList = [1, 2, 3, 1, 4, 2, 5, 3, 7, 8, 9, 8, 1 ,9]
+
+# for index, val in enumerate(myList):
+#     if not val in myList[index+1:]:
+#         print(val)
+#         break
