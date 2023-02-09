@@ -388,22 +388,49 @@ thislist2 = ["Fuad", "Rza", "Sebuhi"]
 # ========================= DECORATORS ==============================
 
 
-list_1 = [1, 2, '3','Ad', 'Soyad','4',5]
-list_2 = []
+# list_1 = [1, 2, '3','Ad', 'Soyad','4',5]
+# list_2 = []
+
+# def sum_of_list(func):
+#     def wrapper(a):
+#         sum_ = 0
+#         for items in func(a):
+#             if str(items).isdigit():
+#                 sum_ += int(items)
+#         return sum_
+        
+#     return wrapper
+
+# @sum_of_list
+
+
+
+# def result(a):
+#     return a
+
+# print(result(list_1))
+
+
+# ========================= DECORATORS ==============================
+
+
+
+
 
 def sum_of_list(func):
     def wrapper(a):
-        sum_ = 0
-        for items in func(a):
-            if str(items).isdigit():
-                sum_ += int(items)
+        sum_ = 0         # abs  () menfi ile verilen reqemleri musbet edir (-1991) -> (1991)
+        for items in str(abs(func(a))):  #str() integerle 1991-i boldu "1","9","9","1"
+            sum_ += int(items)
         return sum_
         
     return wrapper
 
 @sum_of_list
 
+
+
 def result(a):
     return a
 
-print(result(list_1))
+print(result(-1991))
