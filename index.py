@@ -415,7 +415,7 @@ thislist2 = ["Fuad", "Rza", "Sebuhi"]
 
 
 
-
+inp = int(input("reqem daxil edin: "))
 
 def sum_of_list(func):
     def wrapper(a):
@@ -433,4 +433,4 @@ def sum_of_list(func):
 def result(a):
     return a
 
-print(result(-1991))
+print(result(inp))
