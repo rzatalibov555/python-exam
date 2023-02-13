@@ -415,22 +415,52 @@ thislist2 = ["Fuad", "Rza", "Sebuhi"]
 
 
 
-inp = int(input("reqem daxil edin: "))
+# inp = int(input("reqem daxil edin: "))
 
-def sum_of_list(func):
-    def wrapper(a):
-        sum_ = 0         # abs  () menfi ile verilen reqemleri musbet edir (-1991) -> (1991)
-        for items in str(abs(func(a))):  #str() integerle 1991-i boldu "1","9","9","1"
-            sum_ += int(items)
-        return sum_
+# def sum_of_list(func):
+#     def wrapper(a):
+#         sum_ = 0         # abs  () menfi ile verilen reqemleri musbet edir (-1991) -> (1991)
+#         for items in str(abs(func(a))):  #str() integerle 1991-i boldu "1","9","9","1"
+#             sum_ += int(items)
+#         return sum_
         
-    return wrapper
+#     return wrapper
 
-@sum_of_list
+# @sum_of_list
 
 
 
-def result(a):
-    return a
+# def result(a):
+#     return a
 
-print(result(inp))
+# print(result(inp))
+
+
+# ========================= CLASS ==============================
+
+class Calculator:
+
+    def __init__(self, num1, num2):
+        self.num1 = num1
+        self.num2 = num2
+
+    def toplama(self):
+        return self.num1 + self.num2
+    
+    def cixma(self):
+        return self.num1 - self.num2
+    
+    def vurma(self):
+        return self.num1 * self.num2
+        
+    def bolme(self, a):
+        return self.num1 / self.num2 * a
+    
+    
+    def display(self,):
+        return self.toplama(), self.cixma(), self.vurma(), self.bolme(5)
+    
+    
+obj = Calculator(num1 = 10, num2 = 2)
+print(*obj.display())
+    
