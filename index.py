@@ -342,26 +342,68 @@ thislist2 = ["Fuad", "Rza", "Sebuhi"]
 
 
 
-def italic(func):
-    def wrapper(a,b,c):
-        return "<i>"+func(a,b,c)+"</i>"
+# def italic(func):
+#     def wrapper(a,b,c):
+#         return "<i>"+func(a,b,c)+"</i>"
+#     return wrapper
+
+# def bold(func):
+#     def wrapper():
+#         return "<b>"+func()+"</b>"
+#     return wrapper
+
+# def underline(func):
+#     def wrapper():
+#         return "<u>"+func()+"</u>"
+#     return wrapper
+
+# # @underline
+# # @bold
+# @italic
+# def say_hello(a,b,c):
+#     return a +"-"+ b + "-" + c
+
+
+# print(say_hello("1","hello","2"))
+
+# ========================= DECORATORS ==============================
+
+
+# list_1 = ['2','Ad', 'Soyad']
+
+
+# def lenght_of_list(func):
+#     def wrapper(a):
+#         return len(func(a))*3
+#     return wrapper
+
+# @lenght_of_list
+
+# def result(a):
+#     return a
+
+# print(result(list_1))
+
+
+# ========================= DECORATORS ==============================
+
+
+list_1 = [1, 2, '3','Ad', 'Soyad','4',5]
+list_2 = []
+
+def sum_of_list(func):
+    def wrapper(a):
+        sum_ = 0
+        for items in func(a):
+            if str(items).isdigit():
+                sum_ += int(items)
+        return sum_
+        
     return wrapper
 
-def bold(func):
-    def wrapper():
-        return "<b>"+func()+"</b>"
-    return wrapper
+@sum_of_list
 
-def underline(func):
-    def wrapper():
-        return "<u>"+func()+"</u>"
-    return wrapper
+def result(a):
+    return a
 
-# @underline
-# @bold
-@italic
-def say_hello(a,b,c):
-    return a +"-"+ b + "-" + c
-
-
-print(say_hello("1","hello","2"))
+print(result(list_1))
