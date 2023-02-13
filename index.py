@@ -321,3 +321,47 @@ thislist2 = ["Fuad", "Rza", "Sebuhi"]
 #     if not val in myList[index+1:]:
 #         print(val)
 #         break
+
+
+# ======================  DECORATORS =========================
+
+# def test():
+#     def wrapper():
+#         return func().split()
+#     return wrapper
+
+# @test
+
+# def say_hello():
+#     return "Hello world"
+
+# print(say_hello())
+
+
+# =======================================================
+
+
+
+def italic(func):
+    def wrapper(a,b,c):
+        return "<i>"+func(a,b,c)+"</i>"
+    return wrapper
+
+def bold(func):
+    def wrapper():
+        return "<b>"+func()+"</b>"
+    return wrapper
+
+def underline(func):
+    def wrapper():
+        return "<u>"+func()+"</u>"
+    return wrapper
+
+# @underline
+# @bold
+@italic
+def say_hello(a,b,c):
+    return a +"-"+ b + "-" + c
+
+
+print(say_hello("1","hello","2"))
