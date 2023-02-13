@@ -438,29 +438,53 @@ thislist2 = ["Fuad", "Rza", "Sebuhi"]
 
 # ========================= CLASS ==============================
 
-class Calculator:
+# class Calculator:
 
-    def __init__(self, num1, num2):
-        self.num1 = num1
-        self.num2 = num2
+#     def __init__(self, num1, num2):
+#         self.num1 = num1
+#         self.num2 = num2
 
-    def toplama(self):
-        return self.num1 + self.num2
+#     def toplama(self):
+#         return self.num1 + self.num2
     
-    def cixma(self):
-        return self.num1 - self.num2
+#     def cixma(self):
+#         return self.num1 - self.num2
     
-    def vurma(self):
-        return self.num1 * self.num2
+#     def vurma(self):
+#         return self.num1 * self.num2
         
-    def bolme(self, a):
-        return self.num1 / self.num2 * a
+#     def bolme(self, a):
+#         return self.num1 / self.num2 * a
     
     
-    def display(self,):
-        return self.toplama(), self.cixma(), self.vurma(), self.bolme(5)
+#     def display(self,):
+#         return self.toplama(), self.cixma(), self.vurma(), self.bolme(5)
     
     
-obj = Calculator(num1 = 10, num2 = 2)
-print(*obj.display())
+# obj = Calculator(num1 = 10, num2 = 2)
+# print(*obj.display())     ## burdaki * funksiyanin icindeki tuple-lari yox edir
+
+
+# ========================= CLASS (varislik) ==============================
+
+class Rectangle:
+
+    def __init__(self, uzunluq, eni):
+        self.uzunluq = uzunluq
+        self.eni = eni
     
+    def Area(self):
+        return self.uzunluq * self.eni
+
+class Paraliliped(Rectangle):
+
+    def __init__(self, uzunluq, eni, hundurluk):
+        super().__init__(uzunluq, eni)
+        self.hundurluk = hundurluk
+
+    def Volume(self):
+        return self.Area() * self.hundurluk
+
+obj = Paraliliped(2, 3, 5)
+
+print(obj.Volume())
