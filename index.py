@@ -467,24 +467,24 @@ thislist2 = ["Fuad", "Rza", "Sebuhi"]
 
 # ========================= CLASS (varislik) ==============================
 
-class Rectangle:
+# class Rectangle:
 
-    def __init__(self, uzunluq, eni):
-        self.uzunluq = uzunluq
-        self.eni = eni
+#     def __init__(self, uzunluq, eni):
+#         self.uzunluq = uzunluq
+#         self.eni = eni
     
-    def Area(self):
-        return self.uzunluq * self.eni
+#     def Area(self):
+#         return self.uzunluq * self.eni
 
-class Paraliliped(Rectangle):
+# class Paraliliped(Rectangle):
 
-    def __init__(self, uzunluq, eni, hundurluk):
-        super().__init__(uzunluq, eni)
-        self.hundurluk = hundurluk
+#     def __init__(self, uzunluq, eni, hundurluk):
+#         super().__init__(uzunluq, eni)
+#         self.hundurluk = hundurluk
 
-    def Volume(self):
-        return self.Area() * self.hundurluk
+#     def Volume(self):
+#         return self.Area() * self.hundurluk
 
-obj = Paraliliped(2, 3, 5)
+# obj = Paraliliped(2, 3, 5)
 
-print(obj.Volume())
+# print(obj.Volume())
