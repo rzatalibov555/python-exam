@@ -493,26 +493,37 @@ thislist2 = ["Fuad", "Rza", "Sebuhi"]
 # ========================= EXERCISE  ============================== Palindrome
 
 
-class Triangle:
+# class Triangle:
 
-    def __init__(self, angle1, angle2, angle3):
-        self.angle1 = angle1
-        self.angle2 = angle2
-        self.angle3 = angle3
+#     def __init__(self, angle1, angle2, angle3):
+#         self.angle1 = angle1
+#         self.angle2 = angle2
+#         self.angle3 = angle3
 
-    number_of_sides = 3
+#     number_of_sides = 3
 
-    def check_angles(self):
+#     def check_angles(self):
         
-        total_ = self.angle1+self.angle2+self.angle3
-        if total_ == 180:
-            return total_
-        else:
-            return False
+#         total_ = self.angle1+self.angle2+self.angle3
+#         if total_ == 180:
+#             return total_
+#         else:
+#             return False
         
 
 
-my_triangle = Triangle(90,30,60)
+# my_triangle = Triangle(90,30,60)
 
-print(my_triangle.number_of_sides)
-print(my_triangle.check_angles())
+# print(my_triangle.number_of_sides)
+# print(my_triangle.check_angles())
+
+
+# ========================= EXERCISE  ============================== 
+
+# friends = {}
+# i = 0
+# for i in range(3):
+#     name = input("Ad daxil edin")
+#     phone = input("Telefon nömrəsi daxil edin")
+#     friends[name] = phone
+# print(friends)
