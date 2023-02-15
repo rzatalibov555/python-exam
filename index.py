@@ -488,3 +488,6 @@ thislist2 = ["Fuad", "Rza", "Sebuhi"]
 # obj = Paraliliped(2, 3, 5)
 
 # print(obj.Volume())
+
+
+# ========================= EXERCISE  ============================== Palindrome
