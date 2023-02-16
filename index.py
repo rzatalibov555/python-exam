@@ -536,3 +536,24 @@ thislist2 = ["Fuad", "Rza", "Sebuhi"]
 # for i in range(len(buy)):
 #    cashback = cashback + buy[i] * percent
 # print("Keşbek " + str(cashback))
+
+
+
+# ==================== Class Object ======================================
+
+
+class Student_kit:
+
+    principal_name = "Mr. ABC"
+
+    def __init__(self, name):
+        self.name = name
+
+    
+    def attendance(self, days):
+        self.present = days + 10
+        print("Name:", self.name)
+        print("Present:", self.present)
+        print("Principal:", self.principal_name)
+kalu = Student_kit("kalu") 
+kalu.attendance(20)
