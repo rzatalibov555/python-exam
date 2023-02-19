@@ -39,3 +39,48 @@
 # print(obj.calculate_emp_salary(24,1600))
 # print(obj.print_employee_details())
 # print(obj.emp_assign_department("IT"))
+
+
+
+
+# ======================= Product add, update, get =========================================
+
+class Inventory:
+    
+    def __init__(self):
+        self.inventory = {}
+
+    def add_item(self,item_id,item_name, stock_count, price):
+        self.inventory[item_id] = {'item_name':item_name, 'stock_count':stock_count, 'price':price }
+        return self.inventory[item_id]
+
+    def item_update(self,item_id,item_name, stock_count, price):
+
+        if item_id in self.inventory:
+            self.inventory[item_id]['item_name'] = item_name
+            self.inventory[item_id]['stock_count'] = stock_count
+            self.inventory[item_id]['price'] = price
+        else:
+            return "Item not found in inventory."
+        
+
+
+        
+
+    def check_item_details(self,item_id):
+        if item_id in self.inventory:
+            item = self.inventory[item_id]
+            return f"Product Name: {item['item_name']}, Stock Count: {item['stock_count']}, Price: {item['price']}"
+        else:
+            return "Item not found in inventory."
+
+obj = Inventory()
+obj.add_item(1, "Laptop", 100, 500.00)
+obj.add_item(2, "Mobile", 110, 450.00)
+obj.add_item(3, "Desktop", 120, 500.00)
+obj.add_item(4, "Tablet", 90, 550.00)
+
+
+
+obj.item_update(2, "Mobile_tel", 200, 550.00)
+print(obj.check_item_details(2))
