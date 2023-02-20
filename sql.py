@@ -55,6 +55,8 @@
 
 # WHERE CustomerName LIKE 'a__%'
 
+# drop table player
+
 
 
 
