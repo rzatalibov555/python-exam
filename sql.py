@@ -39,3 +39,22 @@
 
 
 # select * from Player where (position = 'demo3' AND cup_count = '5') order by point desc
+
+
+
+
+
+# ===================================================================
+
+# postgressql
+# id serial (serial == autoincrenement)
+
+# https://www.w3schools.com/sql/sql_wildcards.asp
+
+
+
+# WHERE CustomerName LIKE 'a__%'
+
+
+
+
