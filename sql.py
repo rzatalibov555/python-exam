@@ -153,3 +153,84 @@
  
 # -- alter table player
 # -- drop birthday 
+
+
+
+# =============================================================================
+
+
+
+# -- select * from person
+# -- where age in (
+# -- 	select max(age) from person
+# -- ) or age in (
+# -- 	select min(age) from person
+# -- )
+ 
+ 
+# -- select * from person
+# -- where age between (select avg(age) from person) and (select max(age) from person)
+ 
+# -- select surname as username, age as birth
+# -- from person
+ 
+ 
+# -- select * from person
+ 
+# -- select id, concat(surname, ' ', email) as userData from person
+ 
+ 
+# -- create table player(
+# -- 	id serial primary key not null,
+# -- 	name varchar(200) not null,
+# -- 	surname varchar(200) not null,
+# -- 	point int not null check (point<=100)
+# -- )
+ 
+ 
+# -- Insert into player (name, surname, point) values('Ronaldo', 'Cristiano', '99');
+# -- Insert into player (name, surname, point) values('Leo', 'Messi', '100');
+ 
+# -- select * from person
+# -- INNER JOIN player On person.id=player.id
+ 
+ 
+# -- select * from person
+# -- left join player on player.id=person.id
+ 
+# -- select * from person
+# -- right join player on player.id=person.id
+ 
+# -- select * from person
+# -- full outer join player on player.id=person.id
+ 
+ 
+# -- insert into player(id, name, surname, point) values(70, 'Fuad', 'Huseynov', 0)
+ 
+# -- select * from player
+ 
+ 
+ 
+# -- select surname, email from person
+# -- where id in (1, 2, 3)
+# -- Union 
+# -- select name, surname from player
+# -- where point > 99
+ 
+# -- insert into player values (40, 'Oktay', 'Huseynov', 80)
+ 
+# -- select * from player;
+ 
+# -- select sum(point) as sumPoint, surname from player
+# -- group by surname
+# -- having sum(point) >= 80
+ 
+# -- select id, email from person
+# -- where exists (select id from player where player.id=person.id)
+ 
+ 
+# -- select * from person
+# -- where id = any(select id from player)
+ 
+# -- select * from person
+# -- where id = all(select id from player)
