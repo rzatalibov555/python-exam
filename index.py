@@ -542,18 +542,78 @@ thislist2 = ["Fuad", "Rza", "Sebuhi"]
 # ==================== Class Object ======================================
 
 
-class Student_kit:
+# class Student_kit:
 
-    principal_name = "Mr. ABC"
+#     principal_name = "Mr. ABC"
 
-    def __init__(self, name):
-        self.name = name
+#     def __init__(self, name):
+#         self.name = name
 
     
-    def attendance(self, days):
-        self.present = days + 10
-        print("Name:", self.name)
-        print("Present:", self.present)
-        print("Principal:", self.principal_name)
-kalu = Student_kit("kalu") 
-kalu.attendance(20)
+#     def attendance(self, days):
+#         self.present = days + 10
+#         print("Name:", self.name)
+#         print("Present:", self.present)
+#         print("Principal:", self.principal_name)
+# kalu = Student_kit("kalu") 
+# kalu.attendance(20)
+
+
+
+# ================================================================
+
+
+class test:
+    
+    def __init__(self):
+        
+        
+
+    def check_item_details(self,principal_name):
+
+        while True:
+
+            for i in principal_name:
+                
+                ...
+                
+            else:
+                return "Item not found in inventory."
+
+obj = test()
+obj.check_item_details([2,7,11,15])
+
+
+
+
+# ==============================================================
+
+
+
+ 
+
+def find_idx(arr, n):
+ 
+    answer=[]
+ 
+    _sum = 0
+ 
+    for i in range(n - 1, -1, -1):
+ 
+        if (_sum == arr[i]) :
+            answer.append(i)
+ 
+        _sum += arr[i]
+ 
+    if (len(answer) == 0) :
+        print(-1)
+        return
+ 
+    for i in range(len(answer) - 1, -1, -1):
+        print(answer[i], end = " ")
+ 
+
+arr = [ 36, 2, 17, 6, 6, 5 ]
+n = len(arr)
+ 
+find_idx(arr, n)
