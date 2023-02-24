@@ -563,30 +563,6 @@ thislist2 = ["Fuad", "Rza", "Sebuhi"]
 # ================================================================
 
 
-class test:
-    
-    def __init__(self):
-        
-        
-
-    def check_item_details(self,principal_name):
-
-        while True:
-
-            for i in principal_name:
-                
-                ...
-                
-            else:
-                return "Item not found in inventory."
-
-obj = test()
-obj.check_item_details([2,7,11,15])
-
-
-
-
-# ==============================================================
 
 
 
