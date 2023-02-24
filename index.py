@@ -568,28 +568,28 @@ thislist2 = ["Fuad", "Rza", "Sebuhi"]
 
  
 
-def find_idx(arr, n):
+# def find_idx(arr, n):
  
-    answer=[]
+#     answer=[]
  
-    _sum = 0
+#     _sum = 0
  
-    for i in range(n - 1, -1, -1):
+#     for i in range(n - 1, -1, -1):
  
-        if (_sum == arr[i]) :
-            answer.append(i)
+#         if (_sum == arr[i]) :
+#             answer.append(i)
  
-        _sum += arr[i]
+#         _sum += arr[i]
  
-    if (len(answer) == 0) :
-        print(-1)
-        return
+#     if (len(answer) == 0) :
+#         print(-1)
+#         return
  
-    for i in range(len(answer) - 1, -1, -1):
-        print(answer[i], end = " ")
+#     for i in range(len(answer) - 1, -1, -1):
+#         print(answer[i], end = " ")
  
 
-arr = [ 36, 2, 17, 6, 6, 5 ]
-n = len(arr)
+# arr = [ 36, 2, 17, 6, 6, 5 ]
+# n = len(arr)
  
-find_idx(arr, n)
+# find_idx(arr, n)
